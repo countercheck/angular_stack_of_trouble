@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Story Element</h2>
+  <p class="form-group" ng-repeat="storyElement in storyElements">
+    {{storyElement.text}}
+  </p>
+
+  <form role="form" ng-submit="addStoryElement()">
+    <div class="row">
+      <div class="input-group">
+        <input type="text" ng-model="storyElement" placeholder="What needs to be done?" class="form-control">
+        <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
